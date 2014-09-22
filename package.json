@@ -1,7 +1,7 @@
 {
   "name": "get-property",
-  "description": "Get a nested value from an object.",
-  "version": "0.1.0",
+  "description": "Get a nested property or its value from an object using simple `a.b.c` paths.",
+  "version": "0.1.1",
   "homepage": "https://github.com/jonschlinkert/get-property",
   "author": {
     "name": "Jon Schlinkert",
@@ -33,19 +33,37 @@
     "mocha": "*"
   },
   "keywords": [
-    "docs",
-    "documentation",
-    "generate",
-    "generator",
-    "markdown",
-    "templates",
-    "verb"
+    "check",
+    "dot",
+    "find",
+    "has",
+    "hasOwn",
+    "is",
+    "is-object",
+    "isobject",
+    "javascript",
+    "js",
+    "key",
+    "keys",
+    "node.js",
+    "notation",
+    "object",
+    "pick",
+    "prop",
+    "properties",
+    "property",
+    "props",
+    "string",
+    "type",
+    "type-of",
+    "typeof",
+    "util",
+    "utilities",
+    "utility",
+    "utils",
+    "value"
   ],
   "dependencies": {
-    "has-any": "^0.1.0",
-    "has-value": "^0.1.0",
-    "is-plain-object": "^0.1.0",
-    "object-pick": "^0.1.0",
-    "reduce-object": "^0.1.2"
+    "object-pick": "^0.1.0"
   }
 }
