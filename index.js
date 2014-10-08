@@ -9,23 +9,18 @@
 
 var pick = require('object-pick');
 
-module.exports = function get(o, path, value) {
-  var props = path.split('.');
-  var last = props.pop();
-  var len = props.length;
+module.exports = function get(o, prop) {
+  var path = prop.split('.');
+  var last = path.pop();
+  var len = path.length;
 
   for (var i = 0; len > i; i++) {
-    path = props[i];
-    o = o[path];
+    var key = path[i];
+    o = o[key];
 
     if (o == null) {
       break;
     }
   }
-
-  if (value === true) {
-    return o[last];
-  }
-
   return pick(o, last);
 };
